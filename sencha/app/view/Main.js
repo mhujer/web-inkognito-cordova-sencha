@@ -10,39 +10,95 @@ Ext.define('InkognitoChristmas.view.Main', {
 
         items: [
             {
-                title: 'Welcome',
+                title: 'Christmas',
                 iconCls: 'home',
 
                 styleHtmlContent: true,
-                scrollable: true,
-
-                items: {
-                    docked: 'top',
-                    xtype: 'titlebar',
-                    title: 'Welcome to Sencha Touch 2'
+              // scrollable: true,
+                layout: {
+                    type: 'vbox',
+                    align: 'center',
+                    pack: 'center'
                 },
-
-                html: [
-                    "You've just generated a new Sencha Touch 2 project. What you're looking at right now is the ",
-                    "contents of <a target='_blank' href=\"app/view/Main.js\">app/view/Main.js</a> - edit that file ",
-                    "and refresh to change what's rendered here."
-                ].join("")
-            },
-            {
-                title: 'Get Started',
-                iconCls: 'action',
-
                 items: [
                     {
+                        xtype : 'toolbar',
                         docked: 'top',
-                        xtype: 'titlebar',
-                        title: 'Getting Started'
+                        title: 'WebInkognito Christmas Simulator'
                     },
                     {
-                        xtype: 'video',
-                        url: 'http://av.vimeo.com/64284/137/87347327.mp4?token=1330978144_f9b698fea38cd408d52a2393240c896c',
-                        posterUrl: 'http://b.vimeocdn.com/ts/261/062/261062119_640.jpg'
+                        xtype: 'panel',
+                        layout: {
+                            type: 'hbox',
+                            align: 'center',
+                            pack: 'center'
+                        },
+                        items: [
+                            {
+                                xtype: 'button',
+                                cls: 'christmas',
+                                text: '1'
+                            },
+                        ]
+                    },
+                    {
+                        xtype: 'panel',
+                        layout: {
+                            type: 'hbox',
+                            align: 'center',
+                            pack: 'center'
+                        },
+                        items: [
+                            {
+                                xtype: 'button',
+                                cls: 'christmas',
+                                text: '2'
+                            },
+                            {
+                                xtype: 'button',
+                                cls: 'christmas',
+                                text: '3'
+                            },
+                        ]
+                    },
+                    {
+                        xtype: 'panel',
+                        layout: {
+                            type: 'hbox',
+                            align: 'center',
+                            pack: 'center'
+                        },
+                        items: [
+                            {
+                                xtype: 'button',
+                                cls: 'christmas',
+                                text: '4'
+                            },
+                            {
+                                xtype: 'button',
+                                cls: 'christmas',
+                                text: '5'
+                            },
+                            {
+                                xtype: 'button',
+                                cls: 'christmas',
+                                text: '6'
+                            },
+                        ]
                     }
+
+                ],
+
+            },
+            {
+                title: 'is coming',
+                iconCls: 'attachment',
+                items: [
+                    {
+                        xtype : 'toolbar',
+                        docked: 'top',
+                        title: 'WebInkognito Christmas Simulator'
+                    },
                 ]
             }
         ]

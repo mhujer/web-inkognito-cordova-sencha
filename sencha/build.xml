@@ -63,4 +63,16 @@
         <property name="build.options.native.product" value="product:touch"/>
     </target>
     -->
+
+    <target name="-after-build">
+        <echo message="Copying files to Cordova dir"/>
+        <mkdir dir="../www"/>
+        <delete includeEmptyDirs="true">
+            <fileset dir="../www" includes="**/*"/>
+        </delete>
+        <mkdir dir="../www"/>
+        <copy todir="../www" verbose="true">
+            <fileset dir="build/${build.environment}/InkognitoChristmas/"/>
+        </copy>
+    </target>
 </project>

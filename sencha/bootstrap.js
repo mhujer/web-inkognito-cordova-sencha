@@ -638,6 +638,7 @@ Ext.ClassManager.addNameAlternateMappings({
   "Ext.viewport.WindowsPhone": [
     "Ext.viewport.WP"
   ],
+  "InkognitoChristmas.controller.Index": [],
   "InkognitoChristmas.view.Main": []
 });
 Ext.ClassManager.addNameAliasMappings({
@@ -1357,6 +1358,7 @@ Ext.ClassManager.addNameAliasMappings({
   "Ext.viewport.Ios": [],
   "Ext.viewport.Viewport": [],
   "Ext.viewport.WindowsPhone": [],
+  "InkognitoChristmas.controller.Index": [],
   "InkognitoChristmas.view.Main": [
     "widget.main"
   ]
